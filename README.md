@@ -1,10 +1,10 @@
 # ALUNI SYSTEM
 
 ## OVERVIEW
-System Name  = Alumni_db
-Alias        = aluni system
-Version      = 1
-Release Date = Feb 5th 2016
+* System Name  = Alumni_db
+* Alias        = aluni system
+* Version      = 1
+* Release Date = Feb 5th 2016
 
 
 ## SETUP
