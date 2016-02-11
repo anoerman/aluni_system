@@ -471,8 +471,8 @@ class Backend_model extends CI_Model {
 		$this->db->select("*");
 		$this->db->from("aluni_users");
 		$this->db->where("aluni_users.level !=", "super_user");
+		$this->db->join('aluni_user_password_status', 'aluni_user_password_status.username = aluni_users.username', 'left');
 		$this->db->join('aluni_user_privileges', 'aluni_user_privileges.username = aluni_users.username');
-		$this->db->join('aluni_user_password_status', 'aluni_user_password_status.username = aluni_users.username');
 		$user_data = $this->db->get();
 		return $user_data;
 	}
